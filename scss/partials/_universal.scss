@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .background {
     position: absolute;
     top: 0;
@@ -5,4 +7,18 @@
     width: 100vw;
     height: 100vh;
     object-fit: cover;
+}
+
+:root {
+    --colorB: rgb(15, 190, 97);
+}
+
+header {
+    width: 40%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: var(--colorB);
 }
