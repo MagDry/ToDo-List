@@ -1,6 +1,6 @@
 # ToDo-List
 
-Single project (JavaScript, HTML5, CSS, SCSS, Webpack - Babel).
+Single project (JavaScript, HTML5, CSS, SCSS, Webpack - Babel)
 
 Visit here:
 
