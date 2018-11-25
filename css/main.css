@@ -70,10 +70,13 @@ header {
     border: 0px;
     box-shadow: none;
     outline: none;
+    cursor: pointer;
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
     -o-appearance: none;
     appearance: none; }
-    header button .iconColor {
-      fill: var(--colorB); }
+    header button svg {
+      padding: 15px; }
+      header button svg .iconColor {
+        fill: var(--colorB); }

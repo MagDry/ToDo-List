@@ -75,14 +75,19 @@ header {
         border: 0px;
         box-shadow: none;
         outline: none;
+        cursor: pointer;
 
         -webkit-appearance: none;
         -moz-appearance: none;
         -ms-appearance: none;
         -o-appearance: none;
         appearance: none;
-        .iconColor {
-            fill: var(--colorB);
+        svg {
+            padding: 15px;
+            .iconColor {
+                fill: var(--colorB);
+                
+            }
         }
     }
 }
