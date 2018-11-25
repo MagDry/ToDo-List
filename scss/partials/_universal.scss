@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
 .background {
     position: absolute;
     top: 0;
@@ -30,6 +35,11 @@ header {
         height: 50px;
         float: left;
         background: rgba(255, 255, 255, 0.205);
+        color: white;
+        font-size: 15px;
+        font-weight: 400;
+        text-indent: 18px;
+        padding: 0 60px 0 0;
         border-radius: 5px;
         border-top-right-radius: 25px;
         border-bottom-right-radius: 25px;
@@ -40,8 +50,37 @@ header {
         -moz-appearance: none;
         -ms-appearance: none;
         -o-appearance: none;
-        ::-webkit-input-placeholder {
-            color: rgba(255, 255, 255, 0.753);
-        }
+    }
+    ::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.753);
+    }
+    :-moz-placeholder {
+        color: rgba(255, 255, 255, 0.753);
+    }
+    ::-moz-placeholder {
+        color: rgba(255, 255, 255, 0.753);
+    }
+    :-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.753);
+    }
+    button {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 2;
+        border-radius: 25px;
+        background: white;
+        border: 0px;
+        box-shadow: none;
+        outline: none;
+
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+
     }
 }
