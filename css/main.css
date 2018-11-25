@@ -75,3 +75,5 @@ header {
     -ms-appearance: none;
     -o-appearance: none;
     appearance: none; }
+    header button .iconColor {
+      fill: var(--colorB); }

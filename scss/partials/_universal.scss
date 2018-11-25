@@ -81,6 +81,8 @@ header {
         -ms-appearance: none;
         -o-appearance: none;
         appearance: none;
-
+        .iconColor {
+            fill: var(--colorB);
+        }
     }
 }
