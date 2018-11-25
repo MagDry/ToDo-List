@@ -1,25 +1,28 @@
 @charset "UTF-8";
 
-* {
+body {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+    background: rgb(233, 233, 233);
 }
 
-.background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-}
+// .background {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100vw;
+//     height: 100vh;
+//     object-fit: cover;
+// }
+
+//HEADER
 
 :root {
     --colorB: rgb(15, 190, 97);
 }
 
 header {
-    width: 40%;
+    width: 100%;
     height: 80px;
     position: fixed;
     top: 0;
@@ -91,3 +94,5 @@ header {
         }
     }
 }
+
+//

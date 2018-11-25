@@ -551,7 +551,14 @@ module.exports = __webpack_require__(3);
 "use strict";
 
 
-document.addEventListener('DOMContentLoaded', function () {});
+document.addEventListener('DOMContentLoaded', function () {
+
+    function buttonClick() {
+        console.log('Button clicked!');
+    };
+
+    document.getElementById('add').addEventListener('click', buttonClick);
+});
 
 /***/ }),
 /* 3 */
