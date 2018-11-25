@@ -4,6 +4,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     background: rgb(233, 233, 233);
+    padding: 80px 0 0 0;
 }
 
 // .background {
@@ -79,12 +80,11 @@ header {
         box-shadow: none;
         outline: none;
         cursor: pointer;
-
         -webkit-appearance: none;
         -moz-appearance: none;
         -ms-appearance: none;
         -o-appearance: none;
-        appearance: none;
+        // appearance: none;
         svg {
             padding: 15px;
             .iconColor {
@@ -95,4 +95,66 @@ header {
     }
 }
 
-//
+//Todo list
+
+.container {
+    width: 100%;
+    float: left;
+    padding: 15px;
+    .todo {
+        width: 100%;
+        float: left;
+        li {
+            width: 100%;
+            min-height: 50px;
+            float: left;
+            background:white;
+            font-size: 14px;
+            font-weight: 500;
+            color: #444;
+            line-height: 22px;
+            border-radius: 5px;
+            box-shadow: 0px 1px 2px rgba(0, 146, 151, 0.10);
+            list-style: none;
+            margin: 0 0 10px 0;
+            position: relative;
+            padding: 14px 100px 14px 14px;
+
+            .buttons {
+                width: 100px;
+                height: 50px;
+                // border: solid 1px black;
+                position: absolute;
+                top: 0;
+                right: 0;
+                button {
+                    width: 50px;
+                    height: 50px;
+                    float: left;
+                    background: none;
+                    border: 0px;
+                    box-shadow: none;
+                    outline: none;
+                    position: relative;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    -ms-appearance: none;
+                    -o-appearance: none;
+                    // appearance: none;
+                }
+                :last-of-type:before {
+                    content: "";
+                    width: 1px;
+                    height: 30px;
+                    position: absolute;
+                    top: 10px;
+                    left: 0;
+                    background: rgb(187, 187, 187);
+                }
+            }
+        }
+        :last-of-type {
+            margin: 0;
+        }
+    }
+}

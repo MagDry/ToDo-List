@@ -6,7 +6,8 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  background: #e9e9e9; }
+  background: #e9e9e9;
+  padding: 80px 0 0 0; }
 
 :root {
   --colorB: rgb(15, 190, 97); }
@@ -67,9 +68,60 @@ header {
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none; }
+    -o-appearance: none; }
     header button svg {
       padding: 15px; }
       header button svg .iconColor {
         fill: var(--colorB); }
+
+.container {
+  width: 100%;
+  float: left;
+  padding: 15px; }
+  .container .todo {
+    width: 100%;
+    float: left; }
+    .container .todo li {
+      width: 100%;
+      min-height: 50px;
+      float: left;
+      background: white;
+      font-size: 14px;
+      font-weight: 500;
+      color: #444;
+      line-height: 22px;
+      border-radius: 5px;
+      box-shadow: 0px 1px 2px rgba(0, 146, 151, 0.1);
+      list-style: none;
+      margin: 0 0 10px 0;
+      position: relative;
+      padding: 14px 100px 14px 14px; }
+      .container .todo li .buttons {
+        width: 100px;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        right: 0; }
+        .container .todo li .buttons button {
+          width: 50px;
+          height: 50px;
+          float: left;
+          background: none;
+          border: 0px;
+          box-shadow: none;
+          outline: none;
+          position: relative;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          -ms-appearance: none;
+          -o-appearance: none; }
+        .container .todo li .buttons :last-of-type:before {
+          content: "";
+          width: 1px;
+          height: 30px;
+          position: absolute;
+          top: 10px;
+          left: 0;
+          background: #bbbbbb; }
+    .container .todo :last-of-type {
+      margin: 0; }
