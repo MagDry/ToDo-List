@@ -111,10 +111,35 @@ header {
           box-shadow: none;
           outline: none;
           position: relative;
+          cursor: pointer;
           -webkit-appearance: none;
           -moz-appearance: none;
           -ms-appearance: none;
           -o-appearance: none; }
+          .container .todo li .buttons button svg {
+            width: 22px;
+            height: 22px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -11px 0 0 -11px; }
+          .container .todo li .buttons button .fill {
+            -webkit-transition: fill 0.2s ease;
+            -moz-transition: fill 0.2s ease;
+            -ms-transition: fill 0.2s ease;
+            -o-transition: fill 0.2s ease;
+            transition: fill 0.2s ease; }
+        .container .todo li .buttons .remove .fill {
+          fill: #3e664a; }
+        .container .todo li .buttons .remove:hover .fill {
+          fill: #ce3737; }
+        .container .todo li .buttons .complete .fill {
+          fill: #42ac62; }
+        .container .todo li .buttons .complete svg {
+          border-radius: 11px;
+          border: solid 1.5px #42ac62; }
+        .container .todo li .buttons .complete:hover .fill {
+          fill: blue; }
         .container .todo li .buttons :last-of-type:before {
           content: "";
           width: 1px;

@@ -136,11 +136,51 @@ header {
                     box-shadow: none;
                     outline: none;
                     position: relative;
+                    cursor: pointer;
                     -webkit-appearance: none;
                     -moz-appearance: none;
                     -ms-appearance: none;
                     -o-appearance: none;
                     // appearance: none;
+                    svg {
+                        width: 22px;
+                        height: 22px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        margin: -11px 0 0 -11px;
+                    }
+                    .fill {
+                        -webkit-transition: fill 0.2s ease;
+                        -moz-transition: fill 0.2s ease;
+                        -ms-transition: fill 0.2s ease;
+                        -o-transition: fill 0.2s ease;                        
+                        transition: fill 0.2s ease;
+                    }
+                }
+                .remove {
+                    .fill {
+                       fill: rgb(62, 102, 74);
+                    }
+                }
+                .remove:hover {
+                    .fill {
+                        fill: rgb(206, 55, 55);
+                    }
+                }
+                .complete {
+                    .fill {
+                       fill: rgb(66, 172, 98);
+                    }
+                    svg {
+                        border-radius: 11px;
+                        border: solid 1.5px rgb(66, 172, 98);
+                    }
+                }
+                .complete:hover {
+                    .fill {
+                        fill: blue;
+                    }
                 }
                 :last-of-type:before {
                     content: "";
