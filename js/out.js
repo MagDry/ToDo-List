@@ -573,6 +573,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (value) {
             // console.log('There was a value, heh');
             addItemTodo(value);
+            document.getElementById('item').value = '';
         }
     });
 
@@ -601,7 +602,7 @@ document.addEventListener('DOMContentLoaded', function () {
         buttons.appendChild(complete);
         item.appendChild(buttons);
 
-        list.appendChild(item);
+        list.insertBefore(item, list.childNodes[0]);
     }
 });
 
