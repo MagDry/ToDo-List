@@ -24,6 +24,17 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     }); 
 
+    function removeItem() {
+        // console.log(e.target);
+        // console.log(this);
+        // console.log(this.parentNode.parentNode);
+        let item = this.parentNode.parentNode;
+        let parent = item.parentNode;
+
+        parent.removeChild(item);
+    };
+
+
     // Adds a new item to the todo list
 
     function addItemTodo(text) {
@@ -40,6 +51,9 @@ document.addEventListener('DOMContentLoaded', function(){
         let remove = document.createElement('button');
         remove.classList.add('remove');
         remove.innerHTML = removeSVG;
+
+        //Add click event for removing item
+        remove.addEventListener('click', removeItem);
 
         let complete = document.createElement('button');
         complete.classList.add('complete');
