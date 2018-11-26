@@ -138,8 +138,6 @@ header {
         .container .todo li .buttons .complete svg {
           border-radius: 11px;
           border: solid 1.5px #42ac62; }
-        .container .todo li .buttons .complete:hover .fill {
-          fill: blue; }
         .container .todo li .buttons :last-of-type:before {
           content: "";
           width: 1px;
@@ -150,3 +148,9 @@ header {
           background: #bbbbbb; }
     .container .todo :last-of-type {
       margin: 0; }
+  .container .todo:not(#completed) li .buttons .complete:hover svg {
+    background: rgba(66, 172, 98, 0.637);
+    fill: white; }
+  .container #completed li .buttons .complete svg {
+    background: #42ac62;
+    fill: white; }

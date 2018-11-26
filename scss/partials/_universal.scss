@@ -177,11 +177,11 @@ header {
                         border: solid 1.5px rgb(66, 172, 98);
                     }
                 }
-                .complete:hover {
-                    .fill {
-                        fill: blue;
-                    }
-                }
+                // .complete:hover {
+                //     .fill {
+                //         fill: blue;
+                //     }
+                // }
                 :last-of-type:before {
                     content: "";
                     width: 1px;
@@ -197,4 +197,31 @@ header {
             margin: 0;
         }
     }
+    .todo:not(#completed) {
+        li {
+            .buttons {
+                .complete:hover {
+                    svg {
+                        background: rgba(66, 172, 98, 0.637);
+                        fill: white;
+                        // border: 0;
+                    }
+                }
+            }
+        }
+    }
+    #completed {
+        li {
+            .buttons {
+                .complete {
+                    svg {
+                        background: rgb(66, 172, 98);
+                        fill: white;
+                    }
+                }
+            }
+        }    
+    }
 }
+
+
