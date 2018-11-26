@@ -220,8 +220,26 @@ header {
                     }
                 }
             }
-        }    
+        }   
     }
 }
+
+#completed:not(:empty) {
+    position: relative;
+    padding: 60px 0 0 0;
+}
+
+#completed:not(:empty):before {
+    content: " ";
+    width: 150px;
+    height: 1px;
+    background: rgb(187, 187, 187);
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin: 0 0 0 -75px;
+}
+
+
 
 

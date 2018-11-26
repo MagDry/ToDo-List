@@ -154,3 +154,17 @@ header {
   .container #completed li .buttons .complete svg {
     background: #42ac62;
     fill: white; }
+
+#completed:not(:empty) {
+  position: relative;
+  padding: 60px 0 0 0; }
+
+#completed:not(:empty):before {
+  content: " ";
+  width: 150px;
+  height: 1px;
+  background: #bbbbbb;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  margin: 0 0 0 -75px; }
