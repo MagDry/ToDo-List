@@ -160,10 +160,10 @@ header {
   padding: 60px 0 0 0; }
 
 #completed:not(:empty):before {
-  content: " ";
+  content: "You did it!";
+  color: grey;
   width: 150px;
-  height: 1px;
-  background: #bbbbbb;
+  height: 20px;
   position: absolute;
   top: 30px;
   left: 50%;

@@ -16,6 +16,7 @@ body {
 //     object-fit: cover;
 // }
 
+
 //HEADER
 
 :root {
@@ -230,10 +231,12 @@ header {
 }
 
 #completed:not(:empty):before {
-    content: " ";
+    content: "You did it!";
+    // content: " ";
+    color: grey;
     width: 150px;
-    height: 1px;
-    background: rgb(187, 187, 187);
+    height: 20px;
+    // background: rgb(187, 187, 187);
     position: absolute;
     top: 30px;
     left: 50%;
